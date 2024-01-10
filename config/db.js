@@ -9,7 +9,7 @@ const db = mysql.createPool({
 
 //Выводим сообщение о подключении в консоль
 +db.getConnection(() => {
-  console.log('Connect to db2');
+  console.log('Connect to db12');
 });
 
 module.exports = db;
