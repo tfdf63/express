@@ -60,11 +60,11 @@ const PostList: React.FC = () => {
       {posts.map((post) => (
         <div
           key={post.id}
-          className='grid grid-rows-1 grid-flow-col gap-8 py-2 justify-start items-start'
+          className='grid grid-rows-2 grid-flow-col gap-8 py-2 justify-start items-start'
         >
-          <div className='w-8'>{post.id}</div>
-          <div className='w-64'>{post.title}</div>
-          <div className='w-128'>{post.content}</div>
+          <div className='w-4'>{post.id}</div>
+          <div className='w-48'>{post.content}</div>
+          <div className='w-24'>{post.title}</div>
         </div>
       ))}
       </div>
