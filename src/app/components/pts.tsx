@@ -30,20 +30,20 @@ const TablePts: React.FC = () => {
 
   return (
     <div>
-      <h1 className={`mt-12 mb-3 text-xl font-semibold`}>Турнирная таблица</h1>
-      {ptss.map((pts) => (
+      <h1 className={`mt-12 mb-3 text-xl font-semibold flex justify-center`}>Турнирная таблица</h1>
+        {ptss.map((pts) => (
         <div
           key={pts.ptsid}
-          className='grid grid-rows-1 grid-flow-col auto-cols-min gap-4 py-2 text-sm  text-center items-center  shadow-sm mb-2'
+          className='grid grid-rows-1 grid-flow-col gap-8 py-2 justify-center'
         >
           <div className='w-8'>{pts.rank}</div>
-          <div className='w-24 text-left'>{pts.nname}</div>
+          <div className='w-48 text-left'>{pts.nname}</div>
           <div className='w-8'>{pts.wincount}</div>
           <div className='w-8'>{pts.tiecount}</div>
           <div className='w-8'>{pts.losecount}</div>
-          <div className='w-12 bg-red-200'>{pts.pts}</div>
+          <div className='w-12 bg-red-200 text-center'>{pts.pts}</div>
         </div>
-      ))}
+        ))}
     </div>
   );
 };

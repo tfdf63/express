@@ -86,13 +86,13 @@ const TablePost: React.FC = () => {
 
   return (
     <div>
-      <h1 className={`mb-3 mt-12 text-xl font-semibold`}>Список участников</h1>
+      <h1 className={`mb-3 mt-12 text-xl font-semibold flex justify-center`}>Список участников</h1>
       {posts.map((post) => (
         <div
           key={post.id}
-          className={`grid grid-rows-1 grid-flow-col gap-8 py-2 text-align: left justify-between`}
+          className={`grid grid-rows-1 grid-flow-col gap-8 py-2 text-align: left justify-center`}
         >
-          <div className='w-24 h-8 flex items-center '>{post.last_name}</div>
+          <div className='w-36 h-8 flex items-center '>{post.last_name}</div>
           <div className='w-36 h-8 flex items-center '>{post.second_name}</div>
           <div className='w-8 h-8 flex items-center justify-center '>
             {post.points}

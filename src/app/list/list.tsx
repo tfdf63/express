@@ -55,17 +55,19 @@ const PostList: React.FC = () => {
 
   return (
     <div>
-      <h1 className={`mt-12 mb-3 text-xl font-semibold`}>Список постов</h1>
+      <h1 className={`mt-12 mb-3 text-xl font-semibold flex justify-center`}>Список постов</h1>
+      <div className='grid justify-center'>
       {posts.map((post) => (
         <div
           key={post.id}
-          className='grid grid-rows-1 grid-flow-col auto-cols-min gap-4 py-2 text-sm  text-center items-center  shadow-sm mb-2'
+          className='grid grid-rows-1 grid-flow-col gap-8 py-2 justify-start items-start'
         >
           <div className='w-8'>{post.id}</div>
-          <div className='w-32 text-left '>{post.title}</div>
-          <div className='w-40 text-justify bg-red-200'>{post.content}</div>
+          <div className='w-64'>{post.title}</div>
+          <div className='w-128'>{post.content}</div>
         </div>
       ))}
+      </div>
     </div>
   );
 };
