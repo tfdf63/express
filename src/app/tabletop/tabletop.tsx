@@ -23,7 +23,7 @@ const TablePost: React.FC = () => {
       {
         id: 1,
         last_name: 'Дорогойченков',
-        second_name: 'Иванов',
+        second_name: 'Иванов21123123',
         points: 12,
       },
       {
